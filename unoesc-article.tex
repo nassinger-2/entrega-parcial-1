@@ -1,0 +1,97 @@
+\documentclass[
+%% Opções: [*] comente para remover; [>] passada para pacotes
+  article,%% Tipo de documento: article, book, report, etc. [>]
+  a4paper,%% Tamanho de papel: a4paper, letterpaper, etc. [>]
+  12pt,%% Tamanho de fonte: 10pt, 11pt, 12pt, etc. [>]
+  fleqn,%% Alinhamento de equações à esquerda (comente para centralizado) [>]
+  oneside,%% Impressão: oneside (anverso) ou twoside (anverso e verso) [>]
+  % twocolumn,%% Texto em duas colunas (comente para uma coluna) [>]
+  chapter = TITLE,%% Títulos de capítulos em maiúsculas [*]
+  section = TITLE,%% Títulos de seções (secundárias) em maiúsculas [*]
+]{abntex2}
+
+\usepackage{caption}
+\usepackage{hyperref}
+\usepackage[
+  BibURLs = false,
+  ABNTNum = none
+]{unoesc-article}
+
+\addbibresource{unoesc-article.bib}
+
+\titulo{GESTÃO INTELIGENTE DE TRÁFEGO EM OBRAS: uma abordagem baseada em monitoramento em tempo real}
+
+\autor{
+  Gabriel Nassinger%
+  \thanks{
+    \affil{Bacharel em Sistemas de Informação; Unoesc; Chapecó}%
+    \sep\email{g.nassinger@unoesc.edu.br}%
+  }
+}
+
+\data{\today}
+
+\makeindex
+\crefname{figure}{Figura}{Figuras}
+\crefname{table}{Tabela}{Tabelas}
+
+\begin{document}
+
+\pretextual
+
+\begin{paginadetitulo}
+
+    \begin{ambienteresumo}
+A gestão do tráfego em áreas submetidas a intervenções urbanas constitui um desafio crescente, especialmente em centros urbanos com grande fluxo de veículos. A execução de obras, muitas vezes realizada sem planejamento adequado, resulta em congestionamentos, atrasos e riscos à segurança de motoristas e pedestres. Este trabalho apresenta uma proposta de sistema inteligente baseado em monitoramento em tempo real, integrando sensores, câmeras e algoritmos de análise, para otimizar decisões relacionadas ao fechamento de vias e ao redirecionamento do tráfego. A utilização de tecnologias emergentes demonstra potencial para reduzir impactos negativos, aumentar a eficiência operacional e promover melhores condições de mobilidade urbana. 
+\palavraschave{Gestão de tráfego. Monitoramento em tempo real. Mobilidade urbana. Sistemas inteligentes. Obras urbanas.}
+    \end{ambienteresumo}
+
+\end{paginadetitulo}
+
+\textual
+
+%% Introdução
+\section{Introdução}
+
+O crescimento urbano tem intensificado a demanda por intervenções estruturais em infraestruturas viárias. Contudo, o gerenciamento inadequado do tráfego durante obras continua sendo um dos principais fatores responsáveis por congestionamentos e incidentes urbanos. A ausência de recursos automatizados e de processos sistematizados torna as decisões operacionais lentas, subjetivas e pouco eficientes.
+
+Com o avanço de tecnologias como sensores IoT, visão computacional e análise preditiva, surge a possibilidade de implementar sistemas mais inteligentes para o controle do tráfego. Essas ferramentas permitem que gestões municipais e equipes técnicas acessem dados em tempo real, capazes de melhorar a tomada de decisão durante obras, garantindo maior segurança, fluidez e previsibilidade.
+
+\section{Delimitação do Tema}
+
+Este estudo delimita-se à investigação e à aplicação de tecnologias de monitoramento em tempo real voltadas ao controle do tráfego urbano em áreas afetadas por obras. O foco está na integração entre dispositivos de coleta de dados, sistemas de análise e mecanismos de comunicação operacional para otimizar o fechamento de vias e a sinalização temporária.
+
+\section{Justificativa}
+
+A execução de obras urbanas interfere diretamente na mobilidade, afetando não apenas motoristas, mas também o transporte público, ciclistas e pedestres. Métodos tradicionais de gestão, como sinalização manual e intervenções pontuais, mostram-se insuficientes diante da complexidade atual do tráfego.
+
+A adoção de sistemas inteligentes apresenta benefícios como:
+\begin{itemize}
+    \item redução de congestionamentos;
+    \item melhoria da segurança viária durante intervenções;
+    \item aumento da eficiência operacional das equipes de obra;
+    \item fornecimento de dados para planejamento estratégico;
+    \item maior transparência e comunicação com a população.
+\end{itemize}
+
+Assim, justifica-se a pesquisa pela necessidade de modernização e aprimoramento dos processos de gestão urbana.
+
+\section{Objetivo Geral}
+
+Desenvolver um sistema inteligente de monitoramento e análise em tempo real para auxiliar na gestão do tráfego em obras urbanas, permitindo tomadas de decisão mais eficientes no fechamento e na reabertura de vias, com foco em segurança e fluidez.
+
+\subsection{Objetivos Específicos}
+
+\begin{itemize}
+    \item Mapear os principais problemas causados por obras na mobilidade urbana.
+    \item Analisar tecnologias aplicáveis ao monitoramento de tráfego em tempo real.
+    \item Desenvolver um protótipo funcional utilizando sensores e câmeras.
+    \item Avaliar a efetividade do sistema por meio de simulações ou estudos de caso.
+\end{itemize}
+
+\postextual
+
+\newpage
+\printbibliography
+
+\end{document}
